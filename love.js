@@ -1,3 +1,11 @@
+function clearMusicState() {
+    localStorage.removeItem('musicPlaying');
+    localStorage.removeItem('musicCurrentTime');
+}
+
+window.onload = function() {
+    clearMusicState(); 
+}
 function setupMusic() {
     const music = document.getElementById('backgroundMusic');
     
